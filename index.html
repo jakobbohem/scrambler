@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:ng="http://angularjs.org" ng-app=MyController> <!-- =optionalModuleName -->
+<html xmlns:ng="http://angularjs.org" ng-app=MyApp> <!-- =optionalModuleName -->
 <!-- <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<title>Nav alert telephone</title>
@@ -8,13 +8,15 @@
 
 <body>
 	I can add {{1+2}}<br>
-	Hello {{greetMe}}!
+	<div ng-controller="MyController">
+		Hello {{greetMe}}!
+	</div>
+	<input 
+	<!-- includes -->
 	<script src="angular.js"></script>
-	
+	<script type="text/javascript" src="scrambler.js"></script>
 	<span>this app is so cool</span>
 	<p>it’s straight up magic</p>
 	<span class="highlight"><script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script></span>
-
 </body>
-
 </html>
